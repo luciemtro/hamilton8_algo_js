@@ -7,6 +7,6 @@ let userHeight = readlineSync.questionInt('Quelle est la longueur de votre recta
 let calcSurface = (width, height)=>{
     return width * height;
 }
-//Je fais un console log en utilisant ma fonction en donnant deux attributs, la largeur stocker et la hauteur stocker de l'utilisateur
+//Je fais un console log en utilisant ma fonction en donnant deux attributs, la largeur stockée et la hauteur stockée de l'utilisateur
 //Ce qui retourne la largeur multipliée par la hauteur de son rectangle.
 console.log('La surface de votre rectangle est de ' + (calcSurface(userWidth, userHeight)) + ' m2');
