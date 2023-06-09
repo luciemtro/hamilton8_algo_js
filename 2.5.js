@@ -3,14 +3,11 @@ let userFavoriteNumber = readlineSync.question('Enter your favorite number pleas
  
 
  
-if (userFavoriteNumber == 42){
-       console.log('Vous avez trouvez');
- 
-}
-else {
+while (userFavoriteNumber != 42){
   console.log("vous n'avez pas trouvé");
   let userFavoriteNumber = readlineSync.question('Enter your favorite number please');
-};
+}
+
 
  
  
