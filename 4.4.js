@@ -8,7 +8,6 @@ function average(arr){
     result= (result / arr.length);
     return result
 }
-
 function min(arr){
     let min = arr[0];
     for (i = 0 ; i < arr.length ; i++){
@@ -18,7 +17,6 @@ function min(arr){
     }
     return min
 }
-
 function max(arr){
     let max = arr[0];
     for (i = 0 ; i < arr.length ; i++){
@@ -28,7 +26,6 @@ function max(arr){
     }
     return max
 }
-
 function rand10(){
     return  Math.floor(Math.random() * 10)+1;
 }
@@ -39,7 +36,6 @@ function multirand(n){
     }
     return array;
 }
-
 function allfunc(){
     array = multirand(readlineSync.questionInt('entrez un nombre'));
     console.log(array);
@@ -47,7 +43,6 @@ function allfunc(){
     console.log(min(array));
     console.log(max(array));
 }
-
 allfunc();
 
 
