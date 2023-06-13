@@ -1,28 +1,26 @@
 const readlineSync = require("readline-sync");
 
 class Animal {
-    constructor(name) {
+    constructor(greeting, name) {
+        this.greeting = greeting;
         this.name = name;
     }    
-    static greeting = 'Hi !';
-    // or staticgreeting(){return " Hi !";}
-    // sayHello() { return `${Animal.staticgreeting()}! I'm ${this.name}!`;
     sayHello() {
-        return `${Animal.greeting}! I'm ${this.name}!`;
+        return `${this.greeting}! le ${this.name}!`;
     }
 }
 class Cat extends Animal {
-    sayHello() {
-        return super.sayHello();
-        }
-}
-class Dog extends Animal {
-    sayHello() {
-    return super.sayHello();
+    constructor(name){
+        super("Miaouw", name)
     }
 }
-const lechien = new Dog("le chien");
-const lechat = new Cat ("le chat");
+class Dog extends Animal {
+    constructor(name){
+        super("wouuufff !", name)
+    }    
+}
+const lechien = new Dog("chien");
+const lechat = new Cat ("chat");
 console.log(lechien.sayHello());
 console.log(lechat.sayHello());
 
